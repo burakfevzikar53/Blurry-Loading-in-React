@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.bg {
+	background-image: url('https://images.bjk.com.tr/media/taraftar_media/taraftar-8065483355e4192d8a3088.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	top: -30px;
+	left: -30px;
+	width: calc(100vw + 60px);
+	height: calc(100vh + 60px);
+	z-index: -1;
+	filter: blur(0px);
+}
+
+.loading-text {
+	color: #fff;
+	font-size: 50px;
+}
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
